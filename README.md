@@ -12,4 +12,4 @@ Language -> Turkish
 
 ![1723464337171](https://github.com/user-attachments/assets/c74216f4-f4cc-4e4d-a350-c50ade021f07)
 
-## 1️⃣ **RTOS-101**
+## 1️⃣ **RTOS-101**(soon)
