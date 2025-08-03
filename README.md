@@ -13,5 +13,5 @@ This lesson is perfect for anyone looking to understand **parallel processing** 
 Language -> Turkish
 https://www.youtube.com/watch?v=VoL0z6XZEaI&list=PLEhizg6CwYvrsXRzsA9j1L0HxKo_XFSou
 
-## 1️⃣ **RTOS-101**(soon)
+## 2️⃣ **RTOS-101**(soon)
 <img width="1280" height="720" alt="2" src="https://github.com/user-attachments/assets/0534ca19-b5fc-4aa1-8949-f833dc14ff3e" />
