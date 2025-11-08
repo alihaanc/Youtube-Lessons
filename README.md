@@ -31,4 +31,4 @@ Language -> Turkish
 
 In this video series, mathematical operations commonly used in embedded systems will be demonstrated step by step.
 
-https://www.youtube.com/watch?v=HfTOOtI4je4&list=PLEhizg6CwYvrwlTzxUELvf-vTCKQlPTIW
+Language -> Turkish https://www.youtube.com/watch?v=HfTOOtI4je4&list=PLEhizg6CwYvrwlTzxUELvf-vTCKQlPTIW
