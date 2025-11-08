@@ -22,3 +22,13 @@ The "Embedded Systems World" series covers current embedded systems technologies
 
 Language -> Turkish
 [https://www.youtube.com/watch?v=VoL0z6XZEaI&list=PLEhizg6CwYvrsXRzsA9j1L0HxKo_XFSou](https://www.youtube.com/watch?v=0JnaXzwyAPc&list=PLEhizg6CwYvoWNB192MI07wVP93GoFC7j)
+
+
+3️⃣  **Embedded-Math**
+
+
+<img width="1280" height="720" alt="daily forecast" src="https://github.com/user-attachments/assets/fa1ddddb-13bd-4b51-88c1-29c589dc6d93" />
+
+In this video series, mathematical operations commonly used in embedded systems will be demonstrated step by step.
+
+https://www.youtube.com/watch?v=HfTOOtI4je4&list=PLEhizg6CwYvrwlTzxUELvf-vTCKQlPTIW
