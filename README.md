@@ -13,7 +13,7 @@ This lesson is perfect for anyone looking to understand **parallel processing** 
 Language -> Turkish
 https://www.youtube.com/watch?v=VoL0z6XZEaI&list=PLEhizg6CwYvrsXRzsA9j1L0HxKo_XFSou
 
-## 2️⃣ **Embedded-World**(soon)
+## 2️⃣ **Embedded-World**
 
 <img width="1280" height="720" alt="daily forecast" src="https://github.com/user-attachments/assets/5a007b72-1b69-4426-b2c1-f5e0127d1f63" />
 
