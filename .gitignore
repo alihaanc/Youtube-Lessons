@@ -20,3 +20,7 @@ Embedded-Math/.metadata
 Embedded-Math/001_basics/.settings
 Embedded-Math/001_basics/001_basics Debug.launch
 Embedded-Math/001_basics/Debug
+*.xml
+Embedded-Math/002_sayisal_analiz/.settings
+Embedded-Math/002_sayisal_analiz/Debug
+*.launch
