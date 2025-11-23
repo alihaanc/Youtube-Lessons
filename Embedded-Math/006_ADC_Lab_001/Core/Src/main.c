@@ -86,7 +86,8 @@ static void MX_RNG_Init(void);
 #define ADC_BUF_SIZE (BLOCK_SIZE * 2)
 
 uint16_t adc_dma_buffer[ADC_BUF_SIZE];
-float    fir_out_buffer[BLOCK_SIZE];   // her block için output
+float fir_out_buffer_half[BLOCK_SIZE];
+float fir_out_buffer_full[BLOCK_SIZE];
 
 DTCM volatile uint8_t dataReady_half  = 0x00;
 DTCM volatile uint8_t dataReady_full  = 0x00;
@@ -644,7 +645,7 @@ void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef *hadc)
         // (0-31)
         fir_apply_block(&adc_Filter,
                         &adc_dma_buffer[0],          // input
-                        fir_out_buffer,              // output
+						fir_out_buffer_half,              // output
                         BLOCK_SIZE);
 
         dataReady_half = 1;
@@ -659,7 +660,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
     	//(31-62)
         fir_apply_block(&adc_Filter,
                         &adc_dma_buffer[BLOCK_SIZE], // input
-                        fir_out_buffer,
+						fir_out_buffer_full,
                         BLOCK_SIZE);
 
 
@@ -673,13 +674,18 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	if (htim->Instance == TIM6) {
 
 
-		if (dataReady_half && dataReady_full) {
-			dataReady_half = 0;
-			dataReady_full = 0;
+		if(dataReady_half) {
+		    dataReady_half = 0;
+		    for(int i=0; i<BLOCK_SIZE; i++) {
+		        printf("%u, %.6f\r\n", adc_dma_buffer[i], fir_out_buffer_half[i]);
+		    }
+		}
 
-			for (int i = 0; i < BLOCK_SIZE; i++) {
-				printf("%u, %.6f\r\n", adc_dma_buffer[i], fir_out_buffer[i]);
-			}
+		if(dataReady_full) {
+		    dataReady_full = 0;
+		    for(int i=0; i<BLOCK_SIZE; i++) {
+		        printf("%u, %.6f\r\n", adc_dma_buffer[BLOCK_SIZE+i], fir_out_buffer_full[i]);
+		    }
 		}
 
 	}
