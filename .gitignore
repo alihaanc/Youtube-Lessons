@@ -24,3 +24,8 @@ Embedded-Math/001_basics/Debug
 Embedded-Math/002_sayisal_analiz/.settings
 Embedded-Math/002_sayisal_analiz/Debug
 *.launch
+Embedded-Math/0010_CMSIS_DSP/Debug
+Embedded-Math/0010_CMSIS_DSP
+Embedded-Math/003_Filters_/.settings
+Embedded-Math/003_Filters_/Debug
+Embedded-Math/006_ADC_Lab_001/Debug
